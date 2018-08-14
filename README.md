@@ -17,14 +17,14 @@ such a tool.
 
 In this post, I present a final report on the project. The Cuirass
 repository with the changes made during the project is located at
-[http://git.savannah.gnu.org/cgit/guix/guix-cuirass.git](http://git.savannah.gnu.org/cgit/guix/guix-cuirass.git). A
+[https://git.savannah.gnu.org/cgit/guix/guix-cuirass.git](https://git.savannah.gnu.org/cgit/guix/guix-cuirass.git). A
 working instance of the implemented interface is available at
 [https://berlin.guixsd.org/](https://berlin.guixsd.org/).  You can
 find more examples and demonstrations of the achieved results below.
 
 # About Cuirass
 
-Cuirass is designed to monitor a git repository containing Guix
+Cuirass is designed to monitor git repositories containing Guix
 package definitions and build binaries from these package definitions.
 The state of planned builds is stored in a SQLite database. The key
 concepts of the Cuirass internal state are:
@@ -33,14 +33,14 @@ concepts of the Cuirass internal state are:
   done by Cuirass. A specification [is
   defined](https://www.gnu.org/software/guix/manual/en/html_node/Continuous-Integration.html)
   by a Scheme data structure (an association list) which includes a
-  job name, repository URL, as well as the branch and a procedure
+  specification name, repository URLs, as well as their branches and a procedure
   `proc` that specifies how this is to be built.
 
-- **Evaluation**. An evaluation is a high-level build actcion
+- **Evaluation**. An evaluation is a high-level build action
   related to a certain revision of a repository of a given
   specification.  For each specification, Cuirass continuously
   produces new evaluations which build different versions of the
-  project represented by revisions of the corresponding repository.
+  project represented by revisions of corresponding repositories.
   Derivations and builds (see below) each belong to a specific
   evaluation.
 
@@ -83,14 +83,13 @@ of the interface are listed below.
 ## Structure
 
 Let's review the structure of the interface and take a look at the
-information you can find in it.  Note that the web-interface
+information you can find in it.  Note that the web interface
 screenshots presented below were obtained with synthetic data loaded
 into Cuirass database.
 
 ### Main page
 
-The main page is accessible on the root request endpoint (`/`).  The
-main page displays a list of all the specifications stored in the
+The main page is accessible on the root request endpoint (`/`). It displays a list of all the specifications stored in the
 Cuirass database.  Each entry of the list is a clickable link which
 leads to a page about the evaluations of the corresponding
 specification (see below).
@@ -103,7 +102,7 @@ Here is an example view of the main page.
 
 The evaluations list of a given specification with name `<name>` is
 located at `/jobset/<name>/`.  On this page, you can see a list of
-evaluations of the given project starting from the most recent ones.
+evaluations of the given specification starting from the most recent ones.
 You can navigate to older evaluations using the pagination buttons at
 the bottom of the page.  In the table, you can find the following
 information:
