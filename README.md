@@ -1,4 +1,5 @@
-# GSoC 2018 report: Cuirass Web interface
+# GSoC 2018 report 
+## Cuirass Web interface
 ---
 
 For the last three months I have been working with the Guix team as a
@@ -96,7 +97,7 @@ specification (see below).
 
 Here is an example view of the main page.
 
-![Main page screenshot](https://www.gnu.org/software/guix/static/blog/img/cuirass-wi-main.png)
+![Main page screenshot](https://github.com/TSholokhova/gsoc-2018-report/blob/master/pics/cuirass-wi-main.png)
 
 ### Evaluations list
 
@@ -119,7 +120,7 @@ information:
 
 Here is a possible view of the evaluations list page:
 
-![Screenshoot of evaluations list](https://www.gnu.org/software/guix/static/blog/img/cuirass-wi-evals.png)
+![Screenshoot of evaluations list](https://github.com/TSholokhova/gsoc-2018-report/blob/master/pics/cuirass-wi-evals.png)
 
 ### Builds list
 
@@ -134,7 +135,7 @@ also a link to the corresponding build log.  As said above, it is
 possible to filter builds with a certain status by clicking on the
 status link in the evaluations list.
 
-![Screenshot of builds list](https://www.gnu.org/software/guix/static/blog/img/cuirass-wi-builds.png)
+![Screenshot of builds list](https://github.com/TSholokhova/gsoc-2018-report/blob/master/pics/cuirass-wi-builds.png)
 
 # Summary
 
