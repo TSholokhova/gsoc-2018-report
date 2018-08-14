@@ -1,7 +1,4 @@
-title: GSoC 2018 report: Cuirass Web interface
-date: 2018-08-13 17:00
-author: Tatiana Sholokhova
-tags: Cuirass, GSoC, final report
+# GSoC 2018 report: Cuirass Web interface
 ---
 
 For the last three months I have been working with the Guix team as a
